@@ -15,6 +15,57 @@ li {
   font-size: 1em;
   line-height: 1.75em;
 }
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(148, 98, 236, 0.379);
+}
+
+.header-container {
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 0 20px; /* Match container padding */
+}
+
+.navbar.item-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* horizontal */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar.item-nav li {
+  margin: 0;
+}
+
+.navbar.item-nav a {
+  display: block; /* Make the entire link clickable */
+  padding: 10px 15px;
+  text-decoration: none; /* no underlines */
+  color: #333; /* Link color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-link {
+  color: #007bff;
+}
+
+.navbar.item-nav a:hover {
+  color: #bc63fc; /* Change color on hover */
+}
+
+.navbar.item-nav li.active a {
+  color: #c65ed4; /* Style for the active link */
+}
 body {
   background-color: #f3e9f9;
   font-family: "Lato", Arial, sans-serif;
@@ -26,4 +77,18 @@ body {
   margin: auto;
   max-width: 662px;
   padding: 0 20px;
+}
+
+.active-link {
+  /* Styles for the active link */
+  color: red;
+}
+
+.social-icon {
+  font-size: 1.5em; /* Adjust icon size */
+  color: #555;
+}
+
+.footer-text {
+  font-size: 0.9em;
 }
