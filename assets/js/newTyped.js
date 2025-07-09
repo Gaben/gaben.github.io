@@ -1,11 +1,7 @@
 function newTyped() {}
 $(function () {
-  $("#typed").typed({
-    strings: [
-      "Software Engineer Actually",
-      "Frontend Developer..",
-      "Mechanical En... oh..‼",
-    ],
+  $("typed").typed({
+    strings: ["Software Engineer", "Frontend Developer"],
 
     typeSpeed: 90,
     backDelay: 700,
@@ -16,6 +12,6 @@ $(function () {
     },
   }),
     $(".reset").click(function () {
-      $("#typed").typed("reset");
+      $("typed").typed("reset");
     });
 });
