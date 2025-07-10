@@ -3,103 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gab's personal webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Gab - portfolio</title>
   </head>
   <body>
-    <main>
-      <script src="js/backToTop.js"></script>
-      <script src="js/newTyped.js"></script>
-      <header>
-      <div class="header-container">
-          <nav id="navbar-1" class="navbar item-nav">
-            <ul>
-                <li class="active"><a class="nav-link active-link" href="#about">about</a></li>
-                <li><a class="nav-link" href="#skills">skills</a></li>
-                <li><a class="nav-link" href="#experiences">experiences</a></li>
-                <li><a class="nav-link" href="#contact">contact</a></li>
-              </ul>
-            </nav>
-      </div>
-    </header>
-      <!-- Introduction -->
-      <div class="intro section" id="about">
-        <div class="container">
-          <div class="units-row units-split wrap">
-            <div class="unit-20">
-              <img src="assets/img/code.svg" alt="avatar" />
-            </div>
-            <div>
-              <h1>hello there!<br /><span></span></h1>
-            </div>
-            <p>
-              I'm Gab, I work as a Product & Project Manager with a specialization in agile methodologies.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-            </p>
-          </div>
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">Logo</a>
         </div>
-      </div>
-      <!-- Work Experience -->
-      <div>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- Introduction -->
+      <div class="intro">
         <div class="container">
-          <h1>Work<br />Experiences</h1>
-          <ul class="work-list">
-            <li>20xx-Present</li>
-            <li><a href="https://google.com/" target="_blank">MM</a></li>
-            <li>Product Lead</li>
-          </ul>
+          <img
+            src="assets/img/code.svg"
+            alt="avatar"
+            width="200"
+            height="200"
+          />
+        </div>
+        <div>
+          <h1>hello there!<br /></h1>
           <p>
-            <h4>My Roles And Responsibilities are:</h4>
-              <ul>
-              </ul>
-            </p>
+            I'm Gab, I work as a Product & Project Manager. I'm passionate about
+            technology, product development, and digital solutions. With
+            experience in full-stack development, testing, product management,
+            and agile methodologies, I bridge business goals with technical
+            execution. As a certified ScrumMaster® and Product Owner®, I bring
+            strategic vision, an analytical mindset, and leadership to drive
+            impactful projects and deliver real value.
+          </p>
         </div>
       </div>
       <!-- Technical Skills -->
-      <div class="skills section second" id="skills">
-        <div class="container">
-          <h1>Technical<br />Skills</h1>
-          <ul class="skill-list list-flat">
-            <li>Item A </li>
-            <li>HTML / CSS / Javascript</li>
-            <li>Frontend / CSS Library</li>
-            <li>React JS / Material UI / Jquery</li>
-            <li>Backend</li>
-            <li>Node Js / Mongo DB</li>
-          </ul>
-        </div>
-      </div>
-      <footer id="contact">
-        <div class="container">
-          <div class="units-row">
-            <div class="unit-50">
-              <p>Contact me</p>
+      <section id="skills" class="technical-skills">
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
             </div>
-            <div class="unit-50">
-              <ul class="social list-flat right">
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+            <div class="carousel-card">
+              <img src="assets/img/html5.png" alt="html5" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-text">
+          <h2>Tech Skills</h2>
+          <p>
+            Descubre algunas de las tecnologías y herramientas que domino en mi
+            trabajo diario.
+          </p>
+        </div>
+      </section>
+      <!-- Work Experience -->
+      <section id="experience" class="work-experience">
+        <div class="container">
+          <h1>Work Experiences</h1>
+          <div class="job-card-container">
+            <div class="job-card">
+              <div class="header-section">
+                <div class="company-logo">
+                  <img
+                    src="https://via.placeholder.com/48x48?text=.monks"
+                    alt="Monks Logo"
+                  />
+                </div>
+                <div class="job-details">
+                  <h3 class="job-title">Product Project Manager</h3>
+                  <p class="company-info">Monks · Full-time</p>
+                  <p class="employment-duration">
+                    Nov 2021 - Present · 3 yrs 9 mos
+                  </p>
+                </div>
+              </div>
+              <ul class="responsibilities-list">
                 <li>
-                  <a
-                    href="https://www.linkedin.com/in/poncegabriela/"
-                    target="_blank"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
+                  Define and drive the project or product strategy, ensuring
+                  alignment with business objectives (OKRs, KPIs) and
+                  stakeholders needs.
                 </li>
                 <li>
-                  <a href="https://github.com/gaben" target="_blank"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
+                  Lead cross-functional teams to conceive and develop new
+                  product concepts, establish development milestones, and manage
+                  the implementation and subsequent rollout.
                 </li>
                 <li>
-                  <a href="mailto:a@gmail.com" target="_blank"
-                    ><i class="fa-solid fa-envelope"></i
-                  ></a>
+                  Proficient in using tools such as Jira, Confluence, and
+                  Postman for issue tracking, documentation, and API testing.
                 </li>
+              </ul>
+            </div>
+
+            <div class="job-card">
+              <div class="header-section">
+                <div class="company-logo">
+                  <img
+                    src="https://via.placeholder.com/48x48?text=TechCo"
+                    alt="TechCo Logo"
+                  />
+                </div>
+                <div class="job-details">
+                  <h3 class="job-title">Senior Software Engineer</h3>
+                  <p class="company-info">Tech Solutions Inc. · Full-time</p>
+                  <p class="employment-duration">
+                    Jan 2020 - Present · 5 yrs 6 mos
+                  </p>
+                </div>
+              </div>
+              <ul class="responsibilities-list">
+                <li>
+                  Develop and maintain high-performance web applications using
+                  modern frameworks.
+                </li>
+                <li>
+                  Collaborate with product and design teams to define and
+                  implement new features.
+                </li>
+                <li>
+                  Mentor junior engineers and contribute to code review
+                  processes.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job-card">
+              <div class="header-section">
+                <div class="company-logo">
+                  <img
+                    src="https://via.placeholder.com/48x48?text=DesignHub"
+                    alt="DesignHub Logo"
+                  />
+                </div>
+                <div class="job-details">
+                  <h3 class="job-title">UX/UI Designer</h3>
+                  <p class="company-info">Creative Minds Agency · Contract</p>
+                  <p class="employment-duration">
+                    Mar 2023 - Dec 2024 · 1 yr 10 mos
+                  </p>
+                </div>
+              </div>
+              <ul class="responsibilities-list">
+                <li>
+                  Conduct user research, create wireframes, prototypes, and user
+                  flows.
+                </li>
+                <li>
+                  Design intuitive and aesthetically pleasing user interfaces.
+                </li>
+                <li>
+                  Work closely with development teams to ensure design
+                  implementation quality.
+                </li>
+              </ul>
+            </div>
+
+            <div class="job-card">
+              <div class="header-section">
+                <div class="company-logo">
+                  <img
+                    src="https://via.placeholder.com/48x48?text=MarketingPro"
+                    alt="MarketingPro Logo"
+                  />
+                </div>
+                <div class="job-details">
+                  <h3 class="job-title">Digital Marketing Specialist</h3>
+                  <p class="company-info">Global Marketing Group · Full-time</p>
+                  <p class="employment-duration">
+                    Apr 2022 - Present · 3 yrs 3 mos
+                  </p>
+                </div>
+              </div>
+              <ul class="responsibilities-list">
+                <li>
+                  Develop and execute digital marketing campaigns across various
+                  channels.
+                </li>
+                <li>
+                  Analyze campaign performance and optimize strategies for ROI.
+                </li>
+                <li>Manage social media presence and content creation.</li>
               </ul>
             </div>
           </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- Contact me -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h1>Contact me</h1>
+          <p>
+            If you want to get in touch, feel free to reach out via email or
+            connect with me on LinkedIn.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/poncegabriela/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/gaben" target="_blank"
+                ><i class="fa-brands fa-github"></i> GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Develop by @gab. 2025
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+            ><img
+              src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+              alt="Creative Commons License"
+              width="80"
+              height="30"
+          /></a>
+        </p>
+      </div>
+    </footer>
+    <script src="assets/js/mobile-nav.js"></script>
   </body>
 </html>

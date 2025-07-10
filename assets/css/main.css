@@ -1,3 +1,14 @@
+body {
+  /* Usando un fondo similar a tus otros archivos para consistencia */
+  background: url("../img/background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Lato", Arial, sans-serif;
+  color: #444444;
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -7,88 +18,281 @@ h6 {
   font-family: "Playfair Display SC", serif;
   color: #4e4e4e;
 }
-a,
-p,
-li {
-  font-family: "Lato", Arial, sans-serif;
-  color: #444444;
-  font-size: 1em;
-  line-height: 1.75em;
-}
 
 header {
-  background-color: transparent;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px; /* Espacio desde arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1100px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+  backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
+  border-radius: 50px; /* Bordes redondeados */
+  padding: 5px 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px rgba(148, 98, 236, 0.379);
 }
 
-.header-container {
-  max-width: 1200px; /* Adjust as needed */
-  margin: 0 auto;
-  padding: 0 20px; /* Match container padding */
+header .logo a {
+  font-family: "Playfair Display SC", serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #333;
 }
 
-.navbar.item-nav ul {
+header ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+header ul li a:hover {
+  color: #bc63fc; /* Color al pasar el mouse */
+}
+
+main {
+  /* Añadir padding al contenido principal para evitar que se solape con el header fijo */
+  padding-top: 120px;
+}
+
+/* --- Hamburger Menu --- */
+.menu-toggle {
+  display: none; /* Oculto en desktop */
+  position: relative;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-toggle span:nth-child(3) {
+  bottom: 0;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 50s linear infinite;
+  width: calc(300px * 10); /* Ancho basado en el número de tarjetas */
+}
+
+.carousel-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: relative;
+  top: -10px; /* -10px Ajusta este valor para mover la imagen hacia arriba */
+}
+
+/* Se reemplaza la imagen por una card rectangular */
+.carousel-card {
+  width: 330px;
+  height: 200px;
+  margin-right: 20px;
+  /* border: 1px solid #e250ff;  Borde visible */
+  box-sizing: border-box; /* Incluir el borde en el tamaño total */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #008db855;
+  border-radius: 30px; /* Bordes redondeados */
+}
+
+.carousel-card:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.job-card-container {
+  display: grid; /* Use CSS Grid for layout */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Responsive columns */
+  grid-template-columns: 1fr; /*  single column */
+  gap: 20px; /* Space between cards */
+  max-width: 1400px; /* Max width for the grid container */
+  width: 100%;
+  padding: 0; /* Ensure no extra padding */
+}
+
+.job-card {
+  background-color: #ffffff;
+  width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-sizing: border-box; /* Ensures padding is included in the width/height */
+  display: flex; /* Use flexbox for internal card layout */
+  flex-direction: column; /* Stack header and list vertically */
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.company-logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title {
+  font-size: 1.25em; /* Slightly adjusted for better fit in multiple cards */
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.company-info,
+.employment-duration {
+  font-size: 0.9em; /* Slightly adjusted */
+  color: #555;
+  margin: 4px 0 0 0;
+}
+
+.responsibilities-list {
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* horizontal */
-  justify-content: flex-end; /* Align items to the right */
-  align-items: center;
+  flex-grow: 1; /* Allows the list to take up available space, pushing content to the bottom if cards have different heights */
 }
 
-.navbar.item-nav li {
-  margin: 0;
+.responsibilities-list li {
+  font-size: 0.9em; /* Slightly adjusted */
+  color: #333;
+  margin-bottom: 8px; /* Slightly adjusted for tighter spacing in multiple cards */
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.4;
 }
 
-.navbar.item-nav a {
-  display: block; /* Make the entire link clickable */
-  padding: 10px 15px;
-  text-decoration: none; /* no underlines */
-  color: #333; /* Link color */
+.responsibilities-list li:last-child {
+  margin-bottom: 0;
+}
+
+.responsibilities-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: #333;
   font-weight: bold;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-.nav-link {
-  color: #007bff;
-}
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+  header ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 
-.navbar.item-nav a:hover {
-  color: #bc63fc; /* Change color on hover */
-}
+  header ul.active {
+    display: flex;
+  }
 
-.navbar.item-nav li.active a {
-  color: #c65ed4; /* Style for the active link */
-}
-body {
-  background-color: #f3e9f9;
-  font-family: "Lato", Arial, sans-serif;
-  color: #4e4e4e;
-  font-size: 1em;
-  line-height: 1.75em;
-}
-.container {
-  margin: auto;
-  max-width: 662px;
-  padding: 0 20px;
-}
+  header ul li a {
+    font-size: 1.5em;
+  }
 
-.active-link {
-  /* Styles for the active link */
-  color: red;
-}
+  .menu-toggle {
+    display: block; /* Muestra el botón en móvil */
+  }
 
-.social-icon {
-  font-size: 1.5em; /* Adjust icon size */
-  color: #555;
-}
+  /* Animación del botón a una 'X' */
+  .menu-toggle.active span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
 
-.footer-text {
-  font-size: 0.9em;
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
 }
