@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display SC", serif;
+  font-family: Helvetica, sans-serif;
   color: #4e4e4e;
 }
 
@@ -98,6 +98,17 @@ main {
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
   position: absolute;
+}
+
+.intro-text {
+  text-align: center;
+}
+
+.intro-text p {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-left: auto; /* Empuja el margen izquierdo automáticamente */
+  margin-right: auto; /* Empuja el margen derecho automáticamente */
+  max-width: 80%; /* Establece un ancho máximo para el párrafo */
 }
 
 .menu-toggle span:nth-child(1) {
