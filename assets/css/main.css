@@ -336,7 +336,7 @@ main {
   padding: 0;
   margin: 0;
   display: inline-flex; /* Para que los elementos se alineen en línea */
-  gap: 20px; /* Espacio entre los enlaces */
+  gap: 28px; /* Espacio entre los enlaces */
 }
 
 .contact-list li a {
@@ -357,4 +357,28 @@ footer {
   border-top: 1px solid #b297e7d0;
   margin-top: 40px;
   background-color: #c69be4c3;
+}
+
+/* --- Back to Top Button --- */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Oculto por defecto, JS lo mostrará */
+  width: 50px;
+  height: 50px;
+  background-color: #bc63fc;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 999;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #a145e0;
 }

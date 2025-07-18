@@ -16,10 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // smooth scroll to the top when the button is clicked
   backToTopButton.addEventListener("click", function (event) {
     event.preventDefault();
-    document.body.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
