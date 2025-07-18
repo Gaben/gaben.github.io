@@ -320,3 +320,10 @@ main {
     transform: translateY(50%) rotate(-45deg);
   }
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #c69be4c3;
+}
