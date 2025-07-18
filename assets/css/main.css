@@ -66,7 +66,6 @@ header ul li a {
   padding: 8px 12px;
   border-radius: 20px;
   transition: all 0.3s ease;
-  text-transform: capitalize;
 }
 
 header ul li a:hover {
@@ -106,9 +105,10 @@ main {
 
 .intro-text p {
   text-align: center; /* Centra el texto horizontalmente */
+  font-size: large;
   margin-left: auto; /* Empuja el margen izquierdo automáticamente */
   margin-right: auto; /* Empuja el margen derecho automáticamente */
-  max-width: 80%; /* Establece un ancho máximo para el párrafo */
+  max-width: 60%; /* Establece un ancho máximo para el párrafo */
 }
 
 .menu-toggle span:nth-child(1) {
