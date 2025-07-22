@@ -177,31 +177,24 @@ main {
 }
 
 .job-card-container {
-  display: grid; /* Use CSS Grid for layout */
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Responsive columns */
-  grid-template-columns: 1fr; /*  single column */
-  gap: 20px; /* Space between cards */
-  max-width: 1400px; /* Max width for the grid container */
-  width: 100%;
-  padding: 0; /* Ensure no extra padding */
-}
-
-.job-card-container {
-  display: flex; /* Use CSS Grid for layout */
+  display: flex;
   flex-direction: column;
   align-items: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); Responsive columns */
-  /* grid-template-columns: 1fr; */
-  /* single column */
+  /* Not grid . Crea columnas flexibles que se ajustan automáticamente. 
+     Cada columna tendrá un mínimo de 320px y un máximo de 1fr (fracción del espacio disponible) */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px; /* Space between cards */
   max-width: 1400px; /* Max width for the grid container */
   width: 100%;
   padding: 0; /* Ensure no extra padding */
   margin: 0 auto; /* Centers the container */
+  text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
 }
 .job-card {
   background-color: #ffffff;
-  width: 650px;
+  /* Hacemos la tarjeta flexible en lugar de un ancho fijo */
+  width: 100%;
+  max-width: 650px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -318,6 +311,14 @@ main {
   .menu-toggle.active span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
+  }
+
+  .intro-text p {
+    max-width: 90%; /* Aumenta el ancho del párrafo en pantallas pequeñas */
+  }
+
+  .job-card-container {
+    grid-template-columns: 1fr; /* Fuerza una sola columna en pantallas pequeñas */
   }
 }
 
