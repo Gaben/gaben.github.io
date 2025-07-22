@@ -274,16 +274,17 @@ main {
   header ul {
     display: none;
     flex-direction: column;
-    position: fixed;
-    top: 0;
+    position: absolute; /* Lo posicionamos relativo al header, no a la pantalla */
+    top: calc(100% + 10px); /* Lo colocamos 10px por debajo del header */
     left: 0;
     width: 100%;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(5px);
-    justify-content: center;
+    /* Eliminamos la altura fija para que se ajuste al contenido */
+    background: rgba(255, 255, 255, 0.85); /* Mantenemos el efecto cristal */
+    backdrop-filter: blur(10px);
+    border-radius: 20px; /* Le damos bordes redondeados al panel */
+    padding: 15px 0; /* Añadimos espaciado interno */
     align-items: center;
-    gap: 30px;
+    gap: 15px; /* Reducimos el espacio entre los enlaces para un look más compacto */
   }
 
   header ul.active {
