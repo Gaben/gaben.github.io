@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
       particles: {
         // Número de partículas
         number: {
-          value: 160,
+          value: 180,
           density: {
             enable: true,
           },

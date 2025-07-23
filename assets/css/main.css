@@ -73,6 +73,9 @@ header ul li a:hover {
 main {
   /* Añadir padding al contenido principal para evitar que se solape con el header fijo */
   padding-top: 120px;
+  /* Aseguramos que el contenido principal esté por encima de la animación de fondo */
+  position: relative;
+  z-index: 1;
 }
 
 /* --- Hamburger Menu --- */
