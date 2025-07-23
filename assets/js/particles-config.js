@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
     options: {
       // Usamos la misma imagen de fondo que tenías en tu CSS
       background: {
+        color: "#12110c", // Añadimos el color de fondo aquí
         image: "url('assets/img/background.png')",
         position: "center center",
         repeat: "no-repeat",
