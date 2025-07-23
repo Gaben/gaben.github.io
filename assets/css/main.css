@@ -1,7 +1,9 @@
 body {
   /* Usando un fondo similar a tus otros archivos para consistencia */
   background-color: #202124;
-  font-family: "Lato", Arial, sans-serif;
+  /* Fuente principal para el cuerpo del texto 
+  font-family: "Lato", Arial, sans-serif;*/
+  font-family: "Google Sans", sans-serif;
   color: #ffffff;
   font-size: 1em;
   line-height: 1.75em;
@@ -17,8 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica";
-  color: #ffffff;
+  font-family: "Google Sans", sans-serif;
+  color: #eecff9;
 }
 
 header {
@@ -63,7 +65,7 @@ header ul {
 
 header ul li a {
   text-decoration: none;
-  color: #eaeaea;
+  color: #f5efff;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 20px;
@@ -71,7 +73,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #bc63fc; /* Color al pasar el mouse */
+  color: #ca89f9; /* Color al pasar el mouse */
 }
 
 main {
@@ -80,6 +82,14 @@ main {
   /* Aseguramos que el contenido principal esté por encima de la animación de fondo */
   position: relative;
   z-index: 1;
+}
+
+/* --- Section Spacing --- */
+/* Añadimos un margen superior para dar más espacio entre las secciones principales */
+.technical-skills,
+.work-experience,
+.contact {
+  margin-top: 100px;
 }
 
 /* --- Hamburger Menu --- */
@@ -159,7 +169,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #edb7ff9e;
+  background-color: #c4d9f7;
   border-radius: 30px; /* Bordes redondeados */
 }
 
