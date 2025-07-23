@@ -1,7 +1,8 @@
 body {
   /* Usando un fondo similar a tus otros archivos para consistencia */
+  background-color: #202124;
   font-family: "Lato", Arial, sans-serif;
-  color: #444444;
+  color: #ffffff;
   font-size: 1em;
   line-height: 1.75em;
   margin: 0;
@@ -16,8 +17,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Helvetica, sans-serif;
-  color: #4e4e4e;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  color: #ffffff;
 }
 
 header {
@@ -153,12 +165,12 @@ main {
   width: 330px;
   height: 200px;
   margin-right: 20px;
-  /* border: 1px solid #e250ff;  Borde visible */
+  border: 1px solid #f6f6f6; /* Borde visible */
   box-sizing: border-box; /* Incluir el borde en el tamaño total */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #008db855;
+  background-color: #edb7ff9e;
   border-radius: 30px; /* Bordes redondeados */
 }
 
@@ -195,7 +207,7 @@ main {
   text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
 }
 .job-card {
-  background-color: #ffffff;
+  background-color: #e5d9f2;
   /* Hacemos la tarjeta flexible en lugar de un ancho fijo */
   width: 100%;
   max-width: 650px;
