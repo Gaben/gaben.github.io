@@ -21,6 +21,8 @@ h5,
 h6 {
   font-family: "Google Sans", sans-serif;
   color: #eecff9;
+  margin-top: 20%;
+  margin-bottom: 30px;
 }
 
 header {
@@ -30,7 +32,7 @@ header {
   transform: translateX(-50%);
   width: 90%;
   max-width: 1100px;
-  background-color: ·#2b2e2fa8; /* Fondo transparente */
+  background-color: ·#2e2b2fa8; /* Fondo transparente */
   backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
   border-radius: 50px; /* Bordes redondeados */
   padding: 5px 25px;
