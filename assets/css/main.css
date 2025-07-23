@@ -5,6 +5,9 @@ body {
   font-size: 1em;
   line-height: 1.75em;
   margin: 0;
+  /* Creamos un nuevo contexto de apilamiento para que el z-index: -1 de las partículas funcione correctamente */
+  /* y no se oculte detrás del fondo del elemento <html> */
+  isolation: isolate;
 }
 
 h1,
