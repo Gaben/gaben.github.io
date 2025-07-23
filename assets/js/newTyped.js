@@ -1,7 +1,12 @@
 function newTyped() {}
 $(function () {
   $("typed").typed({
-    strings: ["Software Engineer", "Frontend Developer"],
+    strings: [
+      "Product Manager",
+      "Scrum Master",
+      "Product Analyst",
+      "Project Manager",
+    ],
 
     typeSpeed: 90,
     backDelay: 700,
