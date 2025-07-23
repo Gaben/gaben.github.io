@@ -5,8 +5,8 @@ window.addEventListener("load", () => {
       options: {
         // Usamos la misma imagen de fondo que tenías en tu CSS
         background: {
-          color: "#12110c", // Añadimos el color de fondo aquí
-          image: "url('assets/img/background.png')",
+          color: "#fbe76e", // Añadimos el color de fondo aquí
+          // image: "url('assets/img/background.png')",
           position: "center center",
           repeat: "no-repeat",
           size: "cover",
@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
         // Hacemos que la animación ocupe toda la pantalla y esté en el fondo
         fullScreen: {
           enable: true,
-          zIndex: -1, // La clave para ponerlo detrás de todo tu contenido
+          zIndex: -1, // La clave para ponerlo delante de todo tu contenido
         },
         particles: {
           // Número de partículas
