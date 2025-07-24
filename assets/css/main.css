@@ -1,5 +1,5 @@
 body {
-  /* background-color: #202124; darker */
+  /* background-color: #202124; */
   background-color: #332f35;
   /* Fuente principal para el cuerpo del texto 
   font-family: "Lato", Arial, sans-serif;*/
@@ -8,10 +8,7 @@ body {
   font-size: 1em;
   line-height: 1.75em;
   margin: 0;
-  /* Creamos un nuevo contexto de apilamiento para que el z-index: -1 de las partículas funcione correctamente */
-  /* y no se oculte detrás del fondo del elemento <html> */
   cursor: none;
-  isolation: isolate;
 }
 
 h1,
@@ -28,7 +25,7 @@ h6 {
 }
 
 h1:hover {
-  color: #f2f6b9;
+  color: #6eb753;
 }
 
 header {
@@ -79,7 +76,8 @@ header ul {
 
 header ul li a {
   text-decoration: none;
-  color: #f5efff;
+  /* color: #f5efff; */
+  color: #eecff9;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 20px;
@@ -87,15 +85,13 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: #ca89f9; /* Color al pasar el mouse */
+  /* color: #ca89f9; Color al pasar el mouse */
+  color: #d191fb;
 }
 
 main {
   /* Añadir padding al contenido principal para evitar que se solape con el header fijo */
   padding-top: 120px;
-  /* Aseguramos que el contenido principal esté por encima de la animación de fondo */
-  position: relative;
-  z-index: 1;
 }
 
 /* --- Section Spacing --- */
