@@ -216,8 +216,8 @@ main {
   text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
 }
 .job-card {
-  background-color: #e5d9f2;
-  /* Hacemos la tarjeta flexible en lugar de un ancho fijo */
+  /* background-color: #e5d9f2; */
+  background-color: #dcdaf5;
   width: 100%;
   max-width: 650px;
   border-radius: 8px;
@@ -386,6 +386,7 @@ footer {
   border-top: 1px solid #b297e7d0;
   margin-top: 40px;
   background-color: #c69be4c3;
+  /* background-color: #745ea0; */
 }
 
 /* --- Back to Top Button --- */
