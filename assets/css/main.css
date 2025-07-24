@@ -38,7 +38,7 @@ header {
   transform: translateX(-50%);
   width: 90%;
   max-width: 1100px;
-  background-color: ·#2e2b2fa8; /* Fondo transparente */
+  background-color: #2e2b2fa8; /* Fondo transparente */
   backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
   border-radius: 50px; /* Bordes redondeados */
   padding: 5px 25px;
@@ -47,6 +47,11 @@ header {
   box-sizing: border-box;
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border: 1px solid #e2e0f9;
+  transition: top 0.4s ease-in-out; /* Animación para ocultar/mostrar */
+}
+
+header.hidden {
+  top: -150px; /* Mueve la barra fuera de la pantalla */
 }
 
 header nav {
