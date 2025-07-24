@@ -10,6 +10,7 @@ body {
   margin: 0;
   /* Creamos un nuevo contexto de apilamiento para que el z-index: -1 de las partículas funcione correctamente */
   /* y no se oculte detrás del fondo del elemento <html> */
+  cursor: none;
   isolation: isolate;
 }
 
@@ -310,8 +311,8 @@ main {
   }
 
   header ul li a {
-    font-size: 1.5em;
-    color: #a883c0; /* Color de texto oscuro para el menú móvil */
+    font-size: 1.3em;
+    color: #ae6dda; /* Color de texto oscuro para el menú móvil */
   }
 
   .menu-toggle {
@@ -402,4 +403,35 @@ footer {
 
 #back-to-top:hover {
   background-color: #a145e0;
+}
+
+/* --- Custom Cursor --- */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px; /* Tamaño del círculo */
+  height: 30px; /* Tamaño del círculo */
+  border-radius: 50%;
+  background-color: white; /* Color base del cursor */
+  pointer-events: none; /* Para que no interfiera con los clics */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition:
+    transform 0.1s ease-out,
+    width 0.2s ease,
+    height 0.2s ease;
+  mix-blend-mode: difference; /* ¡La magia del contraste! */
+}
+
+/* Estilo del cursor al hacer hover sobre elementos interactivos */
+.custom-cursor.hover {
+  width: 60px; /* Aumenta el tamaño */
+  height: 60px; /* Aumenta el tamaño */
+}
+
+/* Asegurarnos de que el cursor custom sea visible sobre elementos interactivos */
+a,
+button {
+  cursor: none;
 }
