@@ -149,56 +149,6 @@ main {
   bottom: 0;
 }
 
-/* ----------Bloque comentado de carrusel */
-
-/* .carousel {
-  overflow: hidden;
-  width: 100%;
-  margin: 20px 0;
-} */
-
-/* .carousel-track {
-  display: flex;
-  animation: scroll 50s linear infinite;
-  width: calc(300px * 10); Ancho
-} */
-
-/* .carousel-card img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-  position: relative;
-  top: -10px;
-} */
-
-/* .carousel-card {
-  width: 330px;
-  height: 200px;
-  margin-right: 20px;
-  border: 1px solid #f6f6f6;
-  box-sizing: border-box; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #c4d9f7;
-  border-radius: 30px; bordes
-} */
-
-/* .carousel-card:hover {
-  animation-play-state: paused;
-} */
-
-/* @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-} */
-
-/* codigo agregado del nuevo carrusel */
-
 .skills-carousel-container {
   margin-top: 40px;
 }
@@ -262,8 +212,6 @@ main {
     transform: translateX(0);
   }
 }
-
-/* FIN del codigo agregado del nuevo carrusel */
 
 .carousel-text {
   text-align: center;
