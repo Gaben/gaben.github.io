@@ -149,45 +149,103 @@ main {
   bottom: 0;
 }
 
-.carousel {
+/* ----------Bloque comentado de carrusel */
+
+/* .carousel {
   overflow: hidden;
   width: 100%;
   margin: 20px 0;
-}
+} */
 
-.carousel-track {
+/* .carousel-track {
   display: flex;
   animation: scroll 50s linear infinite;
-  width: calc(300px * 10); /* Ancho basado en el número de tarjetas */
-}
+  width: calc(300px * 10); Ancho
+} */
 
-.carousel-card img {
+/* .carousel-card img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
   position: relative;
-  top: -10px; /* -10px Ajusta este valor para mover la imagen hacia arriba */
-}
+  top: -10px;
+} */
 
-/* Se reemplaza la imagen por una card rectangular */
-.carousel-card {
+/* .carousel-card {
   width: 330px;
   height: 200px;
   margin-right: 20px;
-  border: 1px solid #f6f6f6; /* Borde visible */
-  box-sizing: border-box; /* Incluir el borde en el tamaño total */
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box; 
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #c4d9f7;
-  border-radius: 30px; /* Bordes redondeados */
+  border-radius: 30px; bordes
+} */
+
+/* .carousel-card:hover {
+  animation-play-state: paused;
+} */
+
+/* @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+/* codigo agregado del nuevo carrusel */
+
+.skills-carousel-container {
+  margin-top: 40px;
 }
 
-.carousel-card:hover {
+.carousel-row {
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.carousel-row:hover .carousel-track {
   animation-play-state: paused;
 }
 
-@keyframes scroll {
+.carousel-track {
+  display: flex;
+  width: max-content; /* Se ajusta al contenido de los chips */
+}
+
+.scroll-left {
+  animation: scroll-left 50s linear infinite;
+}
+
+.scroll-right {
+  animation: scroll-right 50s linear infinite;
+}
+
+.skill-chip {
+  display: inline-block;
+  background-color: #eecff9;
+  color: #332f35;
+  padding: 10px 25px;
+  margin: 0 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1em;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.skill-chip:hover {
+  background-color: #d191fb;
+  color: #ffffff;
+}
+
+@keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
@@ -195,6 +253,17 @@ main {
     transform: translateX(-50%);
   }
 }
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* FIN del codigo agregado del nuevo carrusel */
 
 .carousel-text {
   text-align: center;
