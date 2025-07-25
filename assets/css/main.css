@@ -364,6 +364,7 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 60px;
   display: inline-flex; /* Para que los elementos se alineen en línea */
   gap: 28px; /* Espacio entre los enlaces */
 }
