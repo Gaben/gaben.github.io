@@ -11,16 +11,13 @@ body {
   cursor: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Google Sans", sans-serif;
+h1 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 3.5em;
+  /*  tamaño de fuente adaptable */
+  font-size: clamp(2.5em, 5vw, 3.5em);
   color: #eecff9;
-  margin-top: 20%;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   transition: color 0.3s ease;
 }
 
@@ -78,6 +75,7 @@ header ul li a {
   text-decoration: none;
   /* color: #f5efff; */
   color: #eecff9;
+  font-size: large;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 20px;
@@ -94,24 +92,26 @@ main {
   padding-top: 120px;
 }
 
-/* --- Section Spacing --- */
-/* Añadimos un margen superior para dar más espacio entre las secciones principales */
 .technical-skills,
 .work-experience,
 .contact {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-/* Estilo para la sección de habilidades técnicas */
 .technical-skills {
-  background-color: #2a262c; /* Un fondo ligeramente más oscuro para destacar */
+  background-color: #2a262c;
   padding: 80px 0;
 }
 
-/* Ajustamos el margen superior del título dentro de la sección de skills */
 .technical-skills h1 {
   margin-top: 0;
-  margin-bottom: 30px; /* Reducimos un poco el margen inferior para acercarlo al párrafo */
+  margin-bottom: 60px; /* Reducimos un poco el margen inferior para acercarlo al párrafo */
+}
+
+.contact {
+  background-color: #2a262c;
+  padding: 80px 0;
 }
 
 /* --- Hamburger Menu --- */
