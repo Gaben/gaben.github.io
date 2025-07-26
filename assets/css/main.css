@@ -88,7 +88,6 @@ header ul li a:hover {
 }
 
 main {
-  /* Añadir padding al contenido principal para evitar que se solape con el header fijo */
   padding-top: 120px;
 }
 
@@ -106,7 +105,7 @@ main {
 
 .technical-skills h1 {
   margin-top: 0;
-  margin-bottom: 60px; /* Reducimos un poco el margen inferior para acercarlo al párrafo */
+  margin-bottom: 60px;
 }
 
 .contact {
@@ -142,11 +141,11 @@ main {
 }
 
 .intro-text p {
-  text-align: center; /* Centra el texto horizontalmente */
+  text-align: center;
   font-size: large;
-  margin-left: auto; /* Empuja el margen izquierdo automáticamente */
-  margin-right: auto; /* Empuja el margen derecho automáticamente */
-  max-width: 60%; /* Establece un ancho máximo para el párrafo */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
 }
 
 .menu-toggle span:nth-child(1) {
