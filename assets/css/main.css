@@ -119,6 +119,11 @@ main {
   margin-bottom: 0;
 }
 
+.intro img {
+  filter: brightness(0) invert(1); /* Cambia el SVG a blanco */
+  opacity: 0.1; /* 0.0 - 1.0 */
+}
+
 /* --- Hamburger Menu --- */
 .menu-toggle {
   display: none; /* Oculto en desktop */
