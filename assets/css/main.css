@@ -112,6 +112,7 @@ main {
 .contact {
   background-color: #2a262c;
   padding: 80px 0;
+  margin-bottom: 0;
 }
 
 /* --- Hamburger Menu --- */
@@ -414,7 +415,7 @@ footer {
   color: #fcfcfc;
   padding: 20px;
   border-top: 1px solid #b297e7d0;
-  margin-top: 40px;
+  margin-top: 0;
   background-color: #c69be4c3;
   /* background-color: #745ea0; */
 }
