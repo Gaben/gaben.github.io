@@ -1,8 +1,6 @@
 body {
-  /* background-color: #202124; */
   background-color: #332f35;
-  /* Fuente principal para el cuerpo del texto 
-  font-family: "Lato", Arial, sans-serif;*/
+  /* font-family: "Lato", Arial, sans-serif;*/
   font-family: "Google Sans", sans-serif;
   color: #ffffff;
   font-size: 1em;
@@ -14,7 +12,6 @@ body {
 h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-size: 3.5em;
-  /*  tamaño de fuente adaptable */
   font-size: clamp(2.5em, 5vw, 3.5em);
   color: #eecff9;
   margin-bottom: 60px;
@@ -27,25 +24,25 @@ h1:hover {
 
 header {
   position: fixed;
-  top: 20px; /* Espacio desde arriba */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
   max-width: 1100px;
-  background-color: #2e2b2fa8; /* Fondo transparente */
-  backdrop-filter: blur(10px); /* Efecto de cristal esmerilado */
-  border-radius: 50px; /* Bordes redondeados */
+  background-color: #2e2b2fa8;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
   padding: 5px 25px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   box-sizing: border-box;
   /* border: 1px solid rgba(255, 255, 255, 0.3); */
   border: 1px solid #e2e0f9;
-  transition: top 0.4s ease-in-out; /* Animación para ocultar/mostrar */
+  transition: top 0.4s ease-in-out;
 }
 
 header.hidden {
-  top: -150px; /* Mueve la barra fuera de la pantalla */
+  top: -150px;
 }
 
 header nav {
@@ -83,7 +80,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  /* color: #ca89f9; Color al pasar el mouse */
+  /* color: #ca89f9*/
   color: #d191fb;
 }
 
@@ -120,13 +117,13 @@ main {
 }
 
 .intro img {
-  filter: brightness(0) invert(1); /* Cambia el SVG a blanco */
+  filter: brightness(0) invert(1);
   opacity: 0.1; /* 0.0 - 1.0 */
 }
 
 /* --- Hamburger Menu --- */
 .menu-toggle {
-  display: none; /* Oculto en desktop */
+  display: none;
   position: relative;
   width: 30px;
   height: 25px;
@@ -187,7 +184,7 @@ main {
 
 .carousel-track {
   display: flex;
-  width: max-content; /* Se ajusta al contenido de los chips */
+  width: max-content;
 }
 
 .scroll-left {
@@ -244,15 +241,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Not grid . Crea columnas flexibles que se ajustan automáticamente. 
-     Cada columna tendrá un mínimo de 320px y un máximo de 1fr (fracción del espacio disponible) */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px; /* Space between cards */
-  max-width: 1400px; /* Max width for the grid container */
+  gap: 20px; /* space between cards */
+  max-width: 1400px;
   width: 100%;
-  padding: 0; /* Ensure no extra padding */
-  margin: 0 auto; /* Centers the container */
-  text-align: left; /* Alinea el texto a la izquierda dentro de las tarjetas */
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
 }
 .job-card {
   /* background-color: #e5d9f2; */
@@ -265,9 +260,9 @@ main {
   padding: 20px;
   border-radius: 30px;
   overflow: hidden;
-  box-sizing: border-box; /* Ensures padding is included in the width/height */
-  display: flex; /* Use flexbox for internal card layout */
-  flex-direction: column; /* Stack header and list vertically */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-section {
@@ -293,7 +288,7 @@ main {
 }
 
 .job-title {
-  font-size: 1.25em; /* Slightly adjusted for better fit in multiple cards */
+  font-size: 1.25em;
   font-weight: bold;
   margin: 0;
   color: #333;
@@ -301,7 +296,7 @@ main {
 
 .company-info,
 .employment-duration {
-  font-size: 0.9em; /* Slightly adjusted */
+  font-size: 0.9em;
   color: #555;
   margin: 4px 0 0 0;
 }
@@ -310,13 +305,13 @@ main {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-grow: 1; /* Allows the list to take up available space, pushing content to the bottom if cards have different heights */
+  flex-grow: 1;
 }
 
 .responsibilities-list li {
-  font-size: 0.9em; /* Slightly adjusted */
+  font-size: 0.9em;
   color: #333;
-  margin-bottom: 8px; /* Slightly adjusted for tighter spacing in multiple cards */
+  margin-bottom: 8px;
   position: relative;
   padding-left: 20px;
   line-height: 1.4;
@@ -339,17 +334,16 @@ main {
   header ul {
     display: none;
     flex-direction: column;
-    position: absolute; /* Lo posicionamos relativo al header, no a la pantalla */
-    top: calc(100% + 10px); /* Lo colocamos 10px por debajo del header */
+    position: absolute;
+    top: calc(100% + 10px);
     left: 0;
     width: 100%;
-    /* Eliminamos la altura fija para que se ajuste al contenido */
-    background: #f8f2faee; /* Mantenemos el efecto cristal */
+    background: #f8f2faee;
     backdrop-filter: blur(10px);
-    border-radius: 20px; /* Le damos bordes redondeados al panel */
-    padding: 15px 0; /* Añadimos espaciado interno */
+    border-radius: 20px;
+    padding: 15px 0;
     align-items: center;
-    gap: 15px; /* Reducimos el espacio entre los enlaces para un look más compacto */
+    gap: 15px;
   }
 
   header ul.active {
@@ -358,14 +352,13 @@ main {
 
   header ul li a {
     font-size: 1.3em;
-    color: #332f35; /* Color de texto oscuro para el menú móvil */
+    color: #332f35;
   }
 
   .menu-toggle {
-    display: block; /* Muestra el botón en móvil */
+    display: block;
   }
 
-  /* Animación del botón a una 'X' */
   .menu-toggle.active span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
@@ -381,11 +374,11 @@ main {
   }
 
   .intro-text p {
-    max-width: 90%; /* Aumenta el ancho del párrafo en pantallas pequeñas */
+    max-width: 90%;
   }
 
   .job-card-container {
-    grid-template-columns: 1fr; /* Fuerza una sola columna en pantallas pequeñas */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -395,8 +388,8 @@ main {
 }
 
 .contact p {
-  max-width: 600px; /* Ancho máximo para el párrafo */
-  margin: 0 auto 20px auto; /* Centrar y añadir espacio inferior */
+  max-width: 600px;
+  margin: 0 auto 20px auto;
 }
 
 .contact-list {
@@ -404,8 +397,8 @@ main {
   padding: 0;
   margin: 0;
   margin-bottom: 60px;
-  display: inline-flex; /* Para que los elementos se alineen en línea */
-  gap: 28px; /* Espacio entre los enlaces */
+  display: inline-flex;
+  gap: 28px;
 }
 
 .contact-list li a {
@@ -417,7 +410,7 @@ main {
 }
 
 .contact-list li a:hover {
-  color: #bc63fc; /* Mismo color hover que la navegación */
+  color: #bc63fc;
 }
 
 footer {
@@ -435,12 +428,11 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  display: none; /* Oculto por defecto, JS lo mostrará */
+  display: none;
   width: 50px;
   height: 50px;
   /* background-color: #bc63fc; */
   background-color: #f1d3f9;
-  /* color: white; */
   color: #332f35;
   text-align: center;
   line-height: 50px;
@@ -461,27 +453,25 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 30px; /* Tamaño del círculo */
-  height: 30px; /* Tamaño del círculo */
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background-color: white; /* Color base del cursor */
-  pointer-events: none; /* Para que no interfiera con los clics */
+  background-color: white;
+  pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition:
     transform 0.1s ease-out,
     width 0.2s ease,
     height 0.2s ease;
-  mix-blend-mode: difference; /* ¡La magia del contraste! */
+  mix-blend-mode: difference;
 }
 
-/* Estilo del cursor al hacer hover sobre elementos interactivos */
 .custom-cursor.hover {
-  width: 60px; /* Aumenta el tamaño */
-  height: 60px; /* Aumenta el tamaño */
+  width: 60px;
+  height: 60px;
 }
 
-/* Asegurarnos de que el cursor custom sea visible sobre elementos interactivos */
 a,
 button {
   cursor: none;
