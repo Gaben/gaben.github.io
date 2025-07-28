@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   carouselTracks.forEach((track) => {
     const originalChips = Array.from(track.children);
 
-    const numberOfClones = 10;
+    const numberOfClones = 4;
     for (let i = 0; i < numberOfClones; i++) {
       originalChips.forEach((chip) => {
         const clone = chip.cloneNode(true);
