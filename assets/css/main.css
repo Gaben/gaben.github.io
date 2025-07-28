@@ -168,11 +168,14 @@ main {
   position: absolute;
 }
 
-.intro-text {
+.intro-text,
+.contact {
   text-align: center;
 }
 
-.intro-text p {
+.intro-text p,
+.technical-skills p,
+.contact p {
   text-align: center;
   font-size: large;
   margin-left: auto;
@@ -409,14 +412,6 @@ main {
 }
 
 /* --- Contact me --- */
-.contact {
-  text-align: center;
-}
-
-.contact p {
-  max-width: 600px;
-  margin: 0 auto 20px auto;
-}
 
 .contact-list {
   list-style: none;
