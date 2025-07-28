@@ -122,6 +122,19 @@ main {
   font-size: large;
 }
 
+/* my experience */
+
+.work-experience {
+  /* background-color: #2a262c; */
+  padding: 30px;
+}
+
+.work-experience h1 {
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+
+/* contact */
 .contact {
   background-color: #2a262c;
   padding: 80px 0;
