@@ -15,8 +15,20 @@ h1 {
   font-size: clamp(2.5em, 5vw, 3.5em);
   color: #eecff9;
   margin-bottom: 60px;
-  transition: color 0.3s ease;
+  /* Scroll animation properties */
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    color 0.3s ease,
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
+
+h1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* end of style scroll animation */
 
 h1:hover {
   color: #8deb6b;
