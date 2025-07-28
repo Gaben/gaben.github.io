@@ -267,7 +267,7 @@ main {
 }
 
 .work-experience a {
-  color: #bc63fc;
+  color: #6b9ceb;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -282,7 +282,7 @@ main {
   flex-direction: column;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px; /* between cards */
+  gap: 30px; /* between cards */
   max-width: 1400px;
   width: 100%;
   padding: 0;
@@ -324,8 +324,8 @@ main {
 }
 
 .company-logo img {
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   transition: transform 0.3s ease;
 }
 
@@ -360,7 +360,7 @@ main {
 }
 
 .responsibilities-list li {
-  font-size: 0.9em;
+  font-size: 1em;
   color: #333;
   margin-bottom: 8px;
   position: relative;
