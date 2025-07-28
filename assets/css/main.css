@@ -146,7 +146,7 @@ main {
   opacity: 0.1; /* 0.0 - 1.0 */
 }
 
-/* --- Hamburger Menu --- */
+/* --- hamburger menu --- */
 .menu-toggle {
   display: none;
   position: relative;
@@ -282,7 +282,7 @@ main {
   flex-direction: column;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px; /* space between cards */
+  gap: 20px; /* between cards */
   max-width: 1400px;
   width: 100%;
   padding: 0;
@@ -318,9 +318,9 @@ main {
 
 .company-logo a {
   display: block;
-  line-height: 0; /* Prevents extra space below the image */
-  border-radius: 4px; /* Match the image's border-radius */
-  overflow: hidden; /* Clip the scaled image */
+  line-height: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .company-logo img {
@@ -330,7 +330,7 @@ main {
 }
 
 .company-logo a:hover img {
-  transform: scale(1.2); /* Zoom in the image on hover */
+  transform: scale(1.2);
 }
 
 .job-details {
