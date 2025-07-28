@@ -266,6 +266,17 @@ main {
   margin-top: 20px;
 }
 
+.work-experience a {
+  color: #bc63fc;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.work-experience a:hover {
+  color: #bc63fc;
+}
+
 .job-card-container {
   display: flex;
   flex-direction: column;
@@ -305,10 +316,21 @@ main {
   flex-shrink: 0;
 }
 
+.company-logo a {
+  display: block;
+  line-height: 0; /* Prevents extra space below the image */
+  border-radius: 4px; /* Match the image's border-radius */
+  overflow: hidden; /* Clip the scaled image */
+}
+
 .company-logo img {
   width: 64px;
   height: 64px;
-  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.company-logo a:hover img {
+  transform: scale(1.2); /* Zoom in the image on hover */
 }
 
 .job-details {
