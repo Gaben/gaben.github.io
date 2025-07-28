@@ -419,8 +419,20 @@ footer {
   padding: 20px;
   border-top: 1px solid #b297e7d0;
   margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.3;
   background-color: #c69be4c3;
   /* background-color: #745ea0; */
+}
+
+footer a {
+  color: #f1d3f9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #bc63fc;
 }
 
 /* --- Back to Top Button --- */
