@@ -267,14 +267,14 @@ main {
 }
 
 .work-experience a {
-  color: #6b9ceb;
+  color: #bf8fd8;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .work-experience a:hover {
-  color: #bc63fc;
+  color: #74c258;
 }
 
 .job-card-container {
