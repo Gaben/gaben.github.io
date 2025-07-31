@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // smooth scroll to the top when the button is clicked
   backToTopButton.addEventListener("click", function (event) {
     event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
