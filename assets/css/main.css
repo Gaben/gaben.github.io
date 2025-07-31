@@ -391,6 +391,42 @@ main {
   margin-bottom: 0;
 }
 
+/* --- About Page --- */
+section.about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.about-text {
+  flex: 1.5; /* Give more space to the text */
+}
+
+.about-text p {
+  max-width: 100%; /* Override general p styles */
+  text-align: left; /* Override general p styles */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
 /* --- Responsive Styles --- */
 @media (max-width: 768px) {
   header ul {
@@ -441,6 +477,16 @@ main {
 
   .job-card-container {
     grid-template-columns: 1fr;
+  }
+
+  section.about {
+    flex-direction: column-reverse; /* Image on top */
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .about-text p {
+    text-align: center; /* Center text on mobile */
   }
 }
 
