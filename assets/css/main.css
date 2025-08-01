@@ -111,7 +111,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 120px); /* Viewport height minus header offset */
+  min-height: calc(100vh - 120px);
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -202,7 +202,7 @@ main {
 }
 
 .intro .intro-text p {
-  max-width: 800px; /* More generous width for the intro text */
+  max-width: 800px;
 }
 
 .menu-toggle span:nth-child(1) {
@@ -402,12 +402,12 @@ section.about {
 }
 
 .about-text {
-  flex: 1.5; /* Give more space to the text */
+  flex: 1.5;
 }
 
 .about-text p {
-  max-width: 100%; /* Override general p styles */
-  text-align: left; /* Override general p styles */
+  max-width: 100%;
+  text-align: left;
   margin-left: 0;
   margin-right: 0;
 }
@@ -480,13 +480,13 @@ section.about {
   }
 
   section.about {
-    flex-direction: column-reverse; /* Image on top */
+    flex-direction: column-reverse;
     gap: 40px;
     margin-top: 40px;
   }
 
   .about-text p {
-    text-align: center; /* Center text on mobile */
+    text-align: center;
   }
 }
 
